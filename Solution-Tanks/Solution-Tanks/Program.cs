@@ -8,7 +8,7 @@ namespace Solution_Tanks
 {
     static class Program
     {
-        /*
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -19,6 +19,6 @@ namespace Solution_Tanks
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-        }*/
+        }
     }
 }
