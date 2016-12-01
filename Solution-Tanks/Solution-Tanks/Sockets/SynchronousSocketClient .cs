@@ -72,11 +72,12 @@ namespace Solution_Tanks.Sockets
                 Console.WriteLine(e.ToString());
             }
         }
-
+        /*
         public static int Main(String[] args)
         {
             StartClient();
             return 0;
         }
+        */
     }
 }
