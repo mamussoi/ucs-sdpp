@@ -13,7 +13,7 @@ namespace Solution_Tanks
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        
+        /*comentario aleatorio*/
         static void Main()
         {
             Application.EnableVisualStyles();
