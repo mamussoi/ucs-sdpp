@@ -21,7 +21,7 @@ namespace Solution_Tanks.Sockets
             {
                 // Establish the remote endpoint for the socket.
                 // This example uses port 11000 on the local computer.
-                IPHostEntry ipHostInfo = Dns.Resolve(Dns.GetHostName());
+                IPHostEntry ipHostInfo = Dns.Resolve("172.20.10.10"); //Dns.Resolve(Dns.GetHostName());
                 IPAddress ipAddress = ipHostInfo.AddressList[0];
                 IPEndPoint remoteEP = new IPEndPoint(ipAddress, 11000);
 
@@ -38,7 +38,7 @@ namespace Solution_Tanks.Sockets
                         sender.RemoteEndPoint.ToString());
 
                     // Encode the data string into a byte array.
-                    byte[] msg = Encoding.ASCII.GetBytes("This is a test<EOF>");
+                    byte[] msg = Encoding.ASCII.GetBytes("OI Teste <EOF>");
 
                     // Send the data through the socket.
                     int bytesSent = sender.Send(msg);
@@ -72,12 +72,12 @@ namespace Solution_Tanks.Sockets
                 Console.WriteLine(e.ToString());
             }
         }
-        /*
+        
         public static int Main(String[] args)
         {
             StartClient();
             return 0;
         }
-        */
+        
     }
 }
