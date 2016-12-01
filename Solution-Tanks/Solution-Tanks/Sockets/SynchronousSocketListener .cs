@@ -58,8 +58,8 @@ namespace Solution_Tanks.Sockets
                     }
 
                     // Show the data on the console.
-                    Console.WriteLine("Text received : {0}", data);
-
+                    Console.WriteLine("Estou respondendo um Ola!", data);
+                    
                     // Echo the data back to the client.
                     byte[] msg = Encoding.ASCII.GetBytes(data);
 
@@ -78,11 +78,11 @@ namespace Solution_Tanks.Sockets
             Console.Read();
 
         }
-        
+        /*
         public static int Main(String[] args)
         {
             StartListening();
             return 0;
-        }
+        }*/
     }
 }
