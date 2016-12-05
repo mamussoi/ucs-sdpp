@@ -1,6 +1,6 @@
 ﻿namespace Solution_Tanks
 {
-    partial class Form1
+    partial class Screen
     {
         /// <summary>
         /// Required designer variable.
@@ -43,6 +43,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Criar Jogo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -85,18 +86,20 @@
             this.button4.Text = "R";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Screen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 507);
+            this.ClientSize = new System.Drawing.Size(1071, 776);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Screen";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Screen_Load);
+            this.Paint += new System.Windows.Forms.PaintEventHandler(this.Screen_Paint);
             this.ResumeLayout(false);
 
         }
