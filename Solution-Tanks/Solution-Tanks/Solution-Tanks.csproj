@@ -46,22 +46,42 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Interface\Screen.cs">
+    <Compile Include="Structures\Bullet.cs" />
+    <Compile Include="Interface\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interface\Screen.Designer.cs">
-      <DependentUpon>Screen.cs</DependentUpon>
+    <Compile Include="Interface\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Graph.cs" />
-    <Compile Include="Interface\ScreenManager.cs" />
-    <Compile Include="Models\Tanque.cs" />
+    <Compile Include="Interface\Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interface\Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Structures\GameConstants.cs" />
+    <Compile Include="Structures\MapFile.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Structures\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sockets\SynchronousSocketClient .cs" />
     <Compile Include="Sockets\SynchronousSocketListener .cs" />
-    <EmbeddedResource Include="Interface\Screen.resx">
-      <DependentUpon>Screen.cs</DependentUpon>
+    <Compile Include="Structures\Tank.cs" />
+    <Compile Include="Structures\Wall.cs" />
+    <EmbeddedResource Include="Interface\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interface\Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\Solution_Tanks.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\Solution_Tanks.Screen.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\TankGame.Form1.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\TankGame.Form2.resources" />
+    <EmbeddedResource Include="obj\x86\Debug\TankGame.Properties.Resources.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -71,6 +91,19 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="bin\Debug\Solution-Tanks.exe.config" />
+    <None Include="bin\Debug\Solution-Tanks.vshost.exe.config" />
+    <None Include="bin\Debug\TankGame.vshost.exe.manifest" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Solution-Tanks.csproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\Solution-Tanks.csprojResolveAssemblyReference.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\x86\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\x86\Debug\GenerateResource.read.1.tlog" />
+    <None Include="obj\x86\Debug\GenerateResource.write.1.tlog" />
+    <None Include="obj\x86\Debug\TankGame.csproj.GenerateResource.Cache" />
+    <None Include="obj\x86\Debug\TankGame.csprojResolveAssemblyReference.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -83,6 +116,34 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Bullet.png" />
+    <Content Include="bin\Debug\GreenTank0.jpg" />
+    <Content Include="bin\Debug\GreenTank1.jpg" />
+    <Content Include="bin\Debug\GreenTank2.jpg" />
+    <Content Include="bin\Debug\GreenTank3.jpg" />
+    <Content Include="bin\Debug\Map.txt" />
+    <Content Include="bin\Debug\RedTank0.jpg" />
+    <Content Include="bin\Debug\RedTank1.jpg" />
+    <Content Include="bin\Debug\RedTank2.jpg" />
+    <Content Include="bin\Debug\RedTank3.jpg" />
+    <Content Include="bin\Debug\Solution-Tanks.vshost.exe" />
+    <Content Include="bin\Debug\TankGame.exe" />
+    <Content Include="bin\Debug\TankGame.pdb" />
+    <Content Include="bin\Debug\TankGame.vshost.exe" />
+    <Content Include="bin\Debug\Wall.jpg" />
+    <Content Include="obj\Debug\Solution-Tanks.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Solution-Tanks.exe" />
+    <Content Include="obj\Debug\Solution-Tanks.pdb" />
+    <Content Include="obj\x86\Debug\TankGame.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\x86\Debug\TankGame.exe" />
+    <Content Include="obj\x86\Debug\TankGame.pdb" />
+    <Content Include="obj\x86\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
